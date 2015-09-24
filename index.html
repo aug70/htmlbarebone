@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-ng-app="weatherApp">
 
 <head>
   <title>HTML Page</title>
@@ -8,6 +8,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/material.indigo-orange.min.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.6/angular.min.js"></script>
+  <script type="text/javascript" src="js/app.js"></script>
+
 </head>
 
   <body style="background: #ccdeff">
@@ -23,52 +27,10 @@
         <router-outlet></router-outlet>
       </main>
       <div class="mdl-grid">
-        <!-- <div class="mdl-cell mdl-cell--12-col" style="text-align: center;">Loading</div> -->
-            <div class="mdl-cell mdl-cell--6-col" >
-              <div class="mdl-card mdl-shadow--2dp" style="width: 100%;">
-                <div class="mdl-card__title">
-                  <h4 >
-                    City: Austin, Tx <br />
-                    Temperature: 88 f<br />
-                    Weather: Partly Cloudy<br />
-                  </h4>
-                </div>
-              </div>
-            </div>
-
-            <div class="mdl-cell mdl-cell--6-col" >
-              <div class="mdl-card mdl-shadow--2dp" style="width: 100%;">
-                <div class="mdl-card__title">
-                  <h4 >
-                    City: Austin, Tx <br />
-                    Temperature: 88 f<br />
-                    Weather: Partly Cloudy<br />
-                  </h4>
-                </div>
-              </div>
-            </div>
-            <div class="mdl-cell mdl-cell--6-col" >
-              <div class="mdl-card mdl-shadow--2dp" style="width: 100%;">
-                <div class="mdl-card__title">
-                  <h4 >
-                    City: Austin, Tx <br />
-                    Temperature: 88 f<br />
-                    Weather: Partly Cloudy<br />
-                  </h4>
-                </div>
-              </div>
-            </div>
-            <div class="mdl-cell mdl-cell--6-col" >
-              <div class="mdl-card mdl-shadow--2dp" style="width: 100%;">
-                <div class="mdl-card__title">
-                  <h4 >
-                    City: Austin, Tx <br />
-                    Temperature: 88 f<br />
-                    Weather: Partly Cloudy<br />
-                  </h4>
-                </div>
-              </div>
-            </div>
+            <weather-info city="Austin" state="Texas"></weather-info>
+            <weather-info city="San Fransisco" state="California"></weather-info>
+            <weather-info city="New York" state="New York"></weather-info>
+            <weather-info city="Los Angeles" state="California"></weather-info>
       </div>
 
     </div>
